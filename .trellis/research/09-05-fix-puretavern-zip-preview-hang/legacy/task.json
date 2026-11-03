@@ -1,0 +1,32 @@
+{
+  "id": "fix-puretavern-zip-preview-hang",
+  "name": "fix-puretavern-zip-preview-hang",
+  "title": "Fix PureTavern zip preview high memory hang",
+  "description": "Fix hang when reading and previewing PureTavern zip package in high memory mode",
+  "status": "completed",
+  "dev_type": null,
+  "scope": null,
+  "package": "web",
+  "priority": "P2",
+  "creator": "jiozhaoyue",
+  "assignee": "jiozhaoyue",
+  "createdAt": "2026-09-05",
+  "completedAt": "2026-09-05",
+  "branch": null,
+  "base_branch": "main",
+  "worktree_path": null,
+  "commit": null,
+  "pr_url": null,
+  "subtasks": [],
+  "children": [],
+  "parent": null,
+  "relatedFiles": [
+    "apps/web/src/features/import-export/application/archive-codec.ts",
+    "apps/web/src/features/import-export/application/archive-participant-registry.ts",
+    "apps/web/src/features/import-export/runtime/index.js",
+    "apps/web/src/features/import-export/tests/archive-codec.test.ts",
+    "apps/web/scripts/data-management-panel.test.ts"
+  ],
+  "notes": "Fixed crypto.subtle dependency in non-secure context, added UI error recovery in preview/import to prevent permanent hang text, and eliminated redundant buffer cloning and unselected conflict queries.",
+  "meta": {}
+}
