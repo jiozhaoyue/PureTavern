@@ -45,3 +45,10 @@ npm-debug.log*
 # Accidental TypeScript config emission (configs are authored as .ts)
 /apps/web/vite.config.js
 /apps/web/vitest.config.js
+
+# Runtime data and local secrets (never commit)
+/data/
+/backups/
+secrets.json
+**/secrets.json
+**/settings_*.json
